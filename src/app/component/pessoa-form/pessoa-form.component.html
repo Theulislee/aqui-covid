@@ -1,0 +1,25 @@
+
+<h1>{{titulo}}</h1>
+
+<form [formGroup]="form" (ngSubmit)="save()">
+
+    <div class="field">
+        <label>Nome/Name:</label>
+        <input type="text" formControlName="nome">
+    
+    </div>
+
+    <div class="field"> 
+        <label>CPF:</label>
+        <input type="text" formControlName="cpf">
+    </div>
+    
+    <div class="toolbox">
+        <button type="submit">Salvar/To salve</button>
+
+        <a [routerLink]="['/pessoa']">
+    <button>Voltar/come back</button>
+</a>
+    </div>
+
+</form>
